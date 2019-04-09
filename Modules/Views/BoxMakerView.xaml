@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="TessBoxHelper.Modules.Views.BoxMakerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TessBoxHelper.Modules.Views"
+             xmlns:cal ="http://www.caliburnproject.org"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Image Source="{Binding ImagePath}"
+                />
+        <Canvas 
+                >
+            <!--cal:Message.Attach="
+                [Event MouseLeftButtonDown] = [Action MouseDown($this, $eventArgs)]
+                [Event PreviewMouseDrag]= [Action MouseDragging($this, $eventArgs)]
+                [Event MouseLeftButtonUp] = [Action MouseUp($this, $eventArgs)]
+                                    "-->
+            
+        </Canvas>
+    </Grid>
+</UserControl>
